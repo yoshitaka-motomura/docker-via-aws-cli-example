@@ -6,7 +6,6 @@ Targets:
   help      Show this help message
   build     docker image build
   run      Run scripts
-  clean     Clean the build artifacts
 endef
 
 export HELP_TEXT
@@ -24,7 +23,3 @@ build:
 run:
 	@echo "Running docker..."
 	@docker-compose up && docker-compose down
-
-.PHONY: clean
-clean:
-	@echo "Cleaning the build artifacts..."
