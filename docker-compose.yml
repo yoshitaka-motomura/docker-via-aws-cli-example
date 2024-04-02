@@ -1,0 +1,10 @@
+services:
+  ubuntu:
+    image: ubuntu-with-awscli
+    volumes:
+      - ./scripts:/app/scripts
+      - ./data/storage/resources:/app/data
+    working_dir: /app
+    command: /bin/bash /app/scripts/sample.sh
+    env_file:
+      - .env
