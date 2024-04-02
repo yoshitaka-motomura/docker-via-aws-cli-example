@@ -10,7 +10,10 @@ It may be useful if you have a certain version of the Docker engine installed bu
 - Docker
 - Make
 
-## Usage
+## example
+Please prepare the AWS access token etc. in advance.
+
+
 ```bash
 make run
 ```
