@@ -1,5 +1,12 @@
 FROM --platform=linux/amd64 ubuntu:latest
 
+RUN mkdir /commands
+
+COPY ./scripts/mycmd /commands/mycmd
+RUN chmod +x /commands/mycmd
+
+ENV PATH="/commands:${PATH}"
+
 RUN apt-get update && \
     apt-get install -y python3 python3-pip python3-venv curl unzip && \
     apt-get clean && \
