@@ -13,7 +13,11 @@ It may be useful if you have a certain version of the Docker engine installed bu
 ## example
 Please prepare the AWS access token etc. in advance.
 
-
+### 1. Build the image
+```bash
+make build
+```
+### 2. Run the container
 ```bash
 make run
 ```
